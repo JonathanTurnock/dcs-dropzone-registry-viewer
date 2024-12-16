@@ -54,6 +54,7 @@ If you would like to help users to install their mods via DROPZONE, you can use 
 [![install-with-dropzone](https://img.shields.io/badge/Install-DROPZONE-f59e0f?style=for-the-badge&logo=github)](https://dcs-dropzone-registry-viewer.pages.dev/)
 
 [![dropzone](https://dcs-dropzone-registry-viewer.pages.dev/download.svg)](https://dcs-dropzone-registry-viewer.pages.dev/)
+
 [![dropzone](https://dcs-dropzone-registry-viewer.pages.dev/download-2.svg)](https://dcs-dropzone-registry-viewer.pages.dev/)
 
 ## Development
