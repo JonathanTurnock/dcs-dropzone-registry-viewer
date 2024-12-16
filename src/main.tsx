@@ -1,5 +1,4 @@
 import "@mantine/core/styles.css";
-import "@fontsource/montserrat/600-italic.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";

@@ -1,6 +1,7 @@
 import { AppShell, Button, Divider, Group, Stack, Text } from "@mantine/core";
 import { BsDownload } from "react-icons/bs";
-import { css } from "../assets/Doctor Glitch.otf";
+import * as doctorGlitch from "../assets/Doctor Glitch.otf";
+import * as montserrat from "../assets/Montserrat-VariableFont_wght.ttf";
 import { useNavigate } from "react-router-dom";
 
 export function AppHeader() {
@@ -14,7 +15,7 @@ export function AppHeader() {
             <Text
               style={{
                 fontSize: "xx-large",
-                fontFamily: css.family,
+                fontFamily: doctorGlitch.css.family,
                 color: "#f59e0f",
                 cursor: "pointer",
               }}
@@ -25,7 +26,7 @@ export function AppHeader() {
             <Divider orientation={"vertical"} />
             <Text
               style={{
-                fontFamily: "Montserrat",
+                fontFamily: montserrat.css.family,
                 width: 250,
               }}
             >

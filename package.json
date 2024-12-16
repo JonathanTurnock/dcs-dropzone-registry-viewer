@@ -11,7 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^5.1.0",
     "@mantine/core": "^7.15.1",
     "@mantine/hooks": "^7.15.1",
     "fuse.js": "^7.0.0",
