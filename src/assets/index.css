@@ -5,10 +5,3 @@
 .readme pre code {
   background-color: unset;
 }
-
-@font-face {
-  font-family: 'Doctor Glitch';
-  src:
-    local('Doctor Glitch'),
-    url('../../public/Doctor Glitch.otf') format('opentype');
-}

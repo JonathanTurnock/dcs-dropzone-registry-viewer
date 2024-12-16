@@ -1,5 +1,6 @@
 import { AppShell, Button, Divider, Group, Stack, Text } from "@mantine/core";
 import { BsDownload } from "react-icons/bs";
+import { css } from "../assets/Doctor Glitch.otf";
 
 export function AppHeader() {
   return (
@@ -10,7 +11,7 @@ export function AppHeader() {
             <Text
               style={{
                 fontSize: "xx-large",
-                fontFamily: "Doctor Glitch",
+                fontFamily: css.family,
                 color: "#f59e0f",
               }}
             >

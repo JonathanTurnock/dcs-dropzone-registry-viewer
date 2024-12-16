@@ -27,6 +27,7 @@ import { ModAuthors } from "../components/ModAuthors.tsx";
 import { ModTags } from "../components/ModTags.tsx";
 import { ModCategory } from "../components/ModCategory.tsx";
 import { ReactNode } from "react";
+import { css } from "../assets/Doctor Glitch.otf";
 
 export type SectionProps = {
   title: string;
@@ -113,7 +114,7 @@ function Page({ mod }: { mod: RegistryIndexItem }) {
                 >
                   <Text
                     style={{
-                      fontFamily: "Doctor Glitch",
+                      fontFamily: css.family,
                       color: "#f59e0f",
                     }}
                   >
