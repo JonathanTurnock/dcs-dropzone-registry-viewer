@@ -7,8 +7,8 @@ import { ModPage } from "./pages/ModPage.tsx";
 export function App() {
   return (
     <AppShell header={{ height: 66 }}>
-      <AppHeader />
       <HashRouter>
+        <AppHeader />
         <Routes>
           <Route path="/" element={<IndexPage />} />
           <Route path="/:id" element={<ModPage />} />

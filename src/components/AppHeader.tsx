@@ -1,8 +1,11 @@
 import { AppShell, Button, Divider, Group, Stack, Text } from "@mantine/core";
 import { BsDownload } from "react-icons/bs";
 import { css } from "../assets/Doctor Glitch.otf";
+import { useNavigate } from "react-router-dom";
 
 export function AppHeader() {
+  const navigate = useNavigate();
+
   return (
     <AppShell.Header>
       <Stack pl={"md"} h={"100%"} justify={"center"}>
@@ -13,7 +16,9 @@ export function AppHeader() {
                 fontSize: "xx-large",
                 fontFamily: css.family,
                 color: "#f59e0f",
+                cursor: "pointer",
               }}
+              onClick={() => navigate("/")}
             >
               Dropzone
             </Text>
