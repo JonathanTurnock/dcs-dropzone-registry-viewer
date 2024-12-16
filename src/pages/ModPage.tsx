@@ -28,6 +28,7 @@ import { ModTags } from "../components/ModTags.tsx";
 import { ModCategory } from "../components/ModCategory.tsx";
 import { ReactNode } from "react";
 import { css } from "../assets/Doctor Glitch.otf";
+import { useMount } from "react-use";
 
 export type SectionProps = {
   title: string;
@@ -47,6 +48,10 @@ function Section({ title, children }: SectionProps) {
 function Page({ mod }: { mod: RegistryIndexItem }) {
   const navigate = useNavigate();
   const data = useGetRegistryEntry(mod.id);
+
+  useMount(() => {
+    scrollTo(0, 0);
+  });
 
   if (data.error) {
     return (

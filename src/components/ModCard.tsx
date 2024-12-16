@@ -12,7 +12,7 @@ export type ModCardProps = {
 export function ModCard({ mod }: ModCardProps) {
   const navigate = useNavigate();
   return (
-    <Card>
+    <Card style={{ cursor: "pointer" }} onClick={() => navigate(`/${mod.id}`)}>
       <Flex gap={"md"}>
         <Flex
           maw={300}
@@ -32,13 +32,7 @@ export function ModCard({ mod }: ModCardProps) {
         </Flex>
         <Stack justify={"space-between"} flex={"auto"} gap={"xs"}>
           <Stack gap={"xs"}>
-            <Text
-              fw={"bold"}
-              style={{ cursor: "pointer" }}
-              onClick={() => navigate(`/${mod.id}`)}
-            >
-              {mod.name}
-            </Text>
+            <Text fw={"bold"}>{mod.name}</Text>
             <Text size={"sm"} lineClamp={3}>
               {mod.description}
             </Text>
