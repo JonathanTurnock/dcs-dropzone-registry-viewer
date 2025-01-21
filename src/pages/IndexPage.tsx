@@ -5,6 +5,8 @@ import {
   Pagination,
   Stack,
   TextInput,
+  Text,
+  Card,
 } from "@mantine/core";
 import { ModCard } from "../components/ModCard.tsx";
 import { usePagination } from "@mantine/hooks";
@@ -42,6 +44,16 @@ export function IndexPage() {
           />
 
           {paginatedData?.map((mod) => <ModCard key={mod.id} mod={mod} />)}
+          <Card style={{ cursor: "pointer" }}>
+          <Stack justify={"space-between"} flex={"auto"} gap={"xs"}>
+              <Text fw={"bold"}>Help us expand our mod library by registering it with us.</Text>
+                <Text>
+                  Best Inform the mod owner of us and ask them raise a Pull Request with us at our{' '}
+                  <a href="https://github.com/flying-dice/dcs-dropzone-registry">Registry</a>. This
+                  means they can inform us of mod releases so your always upto date.
+                </Text>
+            </Stack>
+            </Card>
 
           <Pagination
             total={totalPages}
