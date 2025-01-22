@@ -143,7 +143,7 @@ function Page({ mod }: { mod: RegistryIndexItem }) {
               <Divider color={"gray"} />
 
               <Section title={"Authors"}>
-                <ModAuthors authors={data.data.data.authors} />
+                <ModAuthors authors={data.data.data.authors} chunkSize={9} />
               </Section>
 
               <Divider color={"gray"} />

@@ -43,7 +43,7 @@ export function ModCard({ mod }: ModCardProps) {
               <ModTags tags={mod.tags} />
             </Group>
             <Group gap={"xs"}>
-              <ModAuthors authors={mod.authors} />
+              <ModAuthors authors={mod.authors} max={9} />
               <BsDot />
               <Text size={"sm"}>{mod.latest}</Text>
             </Group>
