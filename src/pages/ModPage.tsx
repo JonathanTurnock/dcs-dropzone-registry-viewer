@@ -8,6 +8,7 @@ import {
   AppShell,
   Breadcrumbs,
   Button,
+  Center,
   Container,
   Divider,
   LoadingOverlay,
@@ -16,6 +17,7 @@ import {
   Textarea,
   Title,
   TypographyStylesProvider,
+  Image,
 } from "@mantine/core";
 import { useNavigate, useParams } from "react-router-dom";
 import { ErrorPage } from "./ErrorPage.tsx";
@@ -68,7 +70,7 @@ function Page({ mod }: { mod: RegistryIndexItem }) {
   }
 
   const latestRelease = data.data?.data.versions.find(
-    (it) => it.version === data.data?.data.latest,
+    (it) => it.version === data.data?.data.latest
   );
 
   return (
@@ -94,6 +96,16 @@ function Page({ mod }: { mod: RegistryIndexItem }) {
           <Stack className={styles.aside}>
             <Stack p={"md"}>
               <Section title={"About"}>
+                {mod.imageUrl && (
+                  <Center>
+                    <Image
+                      src={`https://dcs-mod-manager-registry.pages.dev/${mod.imageUrl}`}
+                      fit="contain"
+                      alt="preview"
+                      radius="sm"
+                    />
+                  </Center>
+                )}
                 {data.data.data.category && (
                   <ModCategory category={data.data.data.category} />
                 )}
